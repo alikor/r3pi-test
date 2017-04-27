@@ -1,0 +1,28 @@
+{
+  "name": "r3pi",
+  "version": "1.0.0",
+  "description": "Madu Alikor test result",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel ./src -d ./dist",
+    "watch": "nodemon --exec jasmine",
+    "test": "jasmine",
+    "start": "babel-node --presets=es2015 ./src/PrintBasket.js apple"
+  },
+  "author": "Madu Alikor",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-env": "^1.4.0",
+    "eslint": "^3.18.0",
+    "eslint-plugin-react": "^6.10.3",
+    "jasmine-es6": "^0.4.0",
+    "jasmine-node": "^1.14.5",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "console.table": "^0.8.0",
+    "lodash": "^4.17.4"
+  }
+}
